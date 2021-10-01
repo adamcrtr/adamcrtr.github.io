@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/customstyle.css">
+
+  <script type="text/javascript">
+  function addition(){
+    var x = Number(document.getElementById("text1").value);
+    var y = Number(document.getElementById("text2").value);
+    var z = document.getElementById("text3");
+    z.value = x + y;
+    document.getElementById("t1").innerHTML = x;
+    document.getElementById("t2").innerHTML = y;
+
+
+  }
+</script>
+
+
+<script type="text/javascript">
+function howmuchfarmneeds(){
+  var x = Number(document.getElementById("text5").value);
+
+  var z = document.getElementById("text4");
+  z.value = x / 2 * 3 ;
+  document.getElementById("t5").innerHTML = x;
+
+
+
+}
+</script>
+
+</script>
+
+
+<script type="text/javascript">
+function cangive(){
+  var x = Number(document.getElementById("text8").value);
+
+  var z = document.getElementById("text9");
+  z.value = x / 3 * 2 ;
+  document.getElementById("t8").innerHTML = x;
+
+
+
+}
+</script>
+  </head>
+  <body>
+
+
+
+
+<div class="container-fluid" style="background-color:#0e5d66;">
+<div class="container">
+ <div class="row">
+    <div class="col-sm-12" style="background-color:lavender;">
+      <h1>Ignore please</h1>
+        <form name=myform>
+          <input type=text id="text1" name="txt1" value="0">
+          <input type=text id="text2" name="txt2" value="0">
+          <input type=text id="text3" name="txt3" value="0">
+          <input type=button id="b1" name="submit" value="Calculate" onclick="javascript:addition()">
+        </form>
+      </div>
+
+  </div>
+ </div>
+ </div>
+
+
+ <div class="container-fluid" style="background-color:blue;">
+ <div class="container">
+  <div class="row">
+     <div class="col-sm-12" style="background-color:brown;">
+        <h1>How much farm needs for main</h1>
+         <form name=myform>
+           <input type=text id="text5" name="txt5" value="">
+
+           <input type=text id="text4" name="txt4" value="Answer Appears Here">
+           <input type=button id="b2" name="submit" value="Calculate" onclick="javascript:howmuchfarmneeds()">
+         </form>
+       </div>
+
+   </div>
+  </div>
+  </div>
+
+  <div class="container-fluid" style="background-color:purple;">
+  <div class="container">
+   <div class="row">
+      <div class="col-sm-12" style="background-color:pink;">
+         <h1>How much farm can give to main</h1>
+          <form name=myform>
+            <input type=text id="text8" name="txt8" value="">
+
+            <input type=text id="text9" name="txt9" value="Answer Appears Here">
+            <input type=button id="b3" name="submit" value="Calculate" onclick="javascript:cangive()">
+          </form>
+        </div>
+
+    </div>
+   </div>
+   </div>
+
+
+  </body>
+</html>
